@@ -1,0 +1,21 @@
+<interfaceDefinition version='1.2' language='vhdl' kind='component' name='FIR_filter'>
+  <useClause path='ieee.std_logic_1164.all' />
+  <useClause path='ieee.STD_LOGIC_SIGNED.all' />
+  <useClause path='ieee.std_logic_arith.all' />
+    <macroList>
+
+      <macro name='a1' type='std_logic_vector (8 downto 0)' kind='array' library='work' package='FIR_filter' packedDimension='(8 downto 0)' />
+      <macro name='a2' type='std_logic_vector (8 downto 0)' kind='array' library='work' package='FIR_filter' packedDimension='(8 downto 0)' />
+      <macro name='a3' type='std_logic_vector (8 downto 0)' kind='array' library='work' package='FIR_filter' packedDimension='(8 downto 0)' />
+
+    </macroList>
+    <portList>
+
+      <port name='CLK' direction='in' type='STD_LOGIC' kind='' />
+      <port name='Enable' direction='in' type='STD_LOGIC' kind='' />
+      <port name='RSTn' direction='in' type='STD_LOGIC' kind='' />
+      <port name='xin' direction='in' type='std_logic_vector (7 downto 0)' kind='array' library='work' package='FIR_filter' packedDimension='(7 downto 0)' />
+      <port name='y' direction='out' type='std_logic_vector (7 downto 0)' kind='array' library='work' package='FIR_filter' packedDimension='(7 downto 0)' />
+
+    </portList>
+</interfaceDefinition>
